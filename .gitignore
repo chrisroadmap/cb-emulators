@@ -1,3 +1,7 @@
+# Large input data files
+data_input_large/
+!data_input_large/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
