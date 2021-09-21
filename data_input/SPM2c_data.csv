@@ -1,0 +1,13 @@
+Driver,total GSAT effect,5% very likely lower limit,95% very likely upper limit
+Carbon dioxide (CO_2),0.788253696,0.521952102,1.247634671
+Methane (CH_4),0.513236937,0.294718019,0.840575458
+Nitrous oxide (N_2O),0.091730576,0.045556739,0.155208999
+Halogenated gases (CFC + HCFC + HFC),0.098761629,0.005150657,0.203463729
+Nitrogen oxides (NO_x),-0.137031967,-0.299279286,0.011594304
+Volatile organic compounds and carbon monoxide (NMVOC + CO),0.223527031,0.093977586,0.39100873
+Sulphur dioxide (SO_2),-0.485553383,-0.931215611,-0.104174332
+Organic carbon,-0.069497757,-0.154982286,0.009359351
+Black carbon,0.093069337,-0.068965859,0.257276827
+Ammonia,-0.014523271,-0.023187403,-0.009278935
+Land-use reflectance and irrigation (irrig+albedo),-0.07988429,-0.138894223,-0.036339465
+Aviation contrails,0.021815132,0.007677347,0.0397674

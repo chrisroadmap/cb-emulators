@@ -1,6 +1,13 @@
+# Apple files
+.DS_Store
+
 # Large input data files 
 data_input_large/*
 !data_input_large/.gitkeep
+
+# Large output data files
+data_output_large/*
+!data_output_large/.gitkeep
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
