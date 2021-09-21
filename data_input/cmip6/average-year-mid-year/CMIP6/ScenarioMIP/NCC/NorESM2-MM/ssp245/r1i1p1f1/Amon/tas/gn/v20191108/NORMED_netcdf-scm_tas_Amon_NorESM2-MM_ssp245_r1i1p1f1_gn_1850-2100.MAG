@@ -1,0 +1,505 @@
+---- HEADER ----
+
+Date: 2021-03-30 06:32:33
+Contact: Zebedee Nicholls <zebedee.nicholls@climate-energy-college.org>, Jared Lewis <jared.lewis@climate-energy-college.org>, Malte Meinshausen <malte.meinshausen@unimelb.edu.au>
+Source data crunched with: netCDF-SCM v2.0.2+48.g89b377bc (see Nicholls et al. (2021, https://doi.org/10.1002/gdj3.113), more info at gitlab.com/netcdf-scm/netcdf-scm)
+File written with: pymagicc v2.0.0 (more info at github.com/openclimatedata/pymagicc)
+
+For more information on the AR6 regions (including mapping the abbrevations to their full names), see: https://github.com/SantanderMetGroup/ATLAS/tree/master/reference-regions, specifically https://github.com/SantanderMetGroup/ATLAS/blob/master/reference-regions/IPCC-WGI-reference-regions-v4_coordinates.csv (paper is at https://doi.org/10.5194/essd-2019-258)
+
+---- METADATA ----
+
+(child) Conventions: CF-1.7
+(child) area_world (m**2): 510099700186440.0
+(child) area_world_el_nino_n3.4 (m**2): 5965450973184.0
+(child) area_world_land (m**2): 149727123341312.0
+(child) area_world_north_atlantic_ocean (m**2): 39416760023364.38
+(child) area_world_northern_hemisphere (m**2): 255049850085192.0
+(child) area_world_northern_hemisphere_land (m**2): 101376573566165.34
+(child) area_world_northern_hemisphere_ocean (m**2): 153673276492820.78
+(child) area_world_ocean (m**2): 360372552859648.0
+(child) area_world_southern_hemisphere (m**2): 255049850101248.0
+(child) area_world_southern_hemisphere_land (m**2): 48350549624308.266
+(child) area_world_southern_hemisphere_ocean (m**2): 206699300474485.3
+(child) branch_method: Hybrid-restart from year 2015-01-01 of historical
+(child) branch_time: 0.0
+(child) branch_time_in_child: 0.0
+(child) branch_time_in_parent: 60225.0
+(child) calendar: 365_day
+(child) cell_measures: area: areacella
+(child) cmor_version: 3.5.0
+(child) comment: near-surface (usually, 2 meter) air temperature
+(child) contact: Please send any requests or bug reports to noresm-ncc@met.no.
+(child) crunch_contact: Zebedee Nicholls <zebedee.nicholls@climate-energy-college.org>, Jared Lewis <jared.lewis@climate-energy-college.org>, Malte Meinshausen <malte.meinshausen@unimelb.edu.au>
+(child) crunch_netcdf_scm_version: 2.0.2+48.g89b377bc (see Nicholls et al. (2021, https://doi.org/10.1002/gdj3.113), more info at gitlab.com/netcdf-scm/netcdf-scm)
+(child) crunch_netcdf_scm_weight_kwargs: {"regions": ["World", "World|Northern Hemisphere", "World|Southern Hemisphere", "World|Land", "World|Ocean", "World|Northern Hemisphere|Land", "World|Southern Hemisphere|Land", "World|Northern Hemisphere|Ocean", "World|Southern Hemisphere|Ocean", "World|El Nino N3.4", "World|North Atlantic Ocean"], "cell_weights": null}
+(child) crunch_source_files: Files: ['/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_201501-202012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_202101-203012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_203101-204012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_204101-205012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_205101-206012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_206101-207012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_207101-208012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_208101-209012.nc', '/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_209101-210012.nc']; areacella: ['/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/fx/areacella/gn/v20191108/areacella_fx_NorESM2-MM_ssp245_r1i1p1f1_gn.nc']; sftlf: ['/CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/fx/sftlf/gn/v20191108/sftlf_fx_NorESM2-MM_ssp245_r1i1p1f1_gn.nc']
+(child) data_specs_version: 01.00.31
+(child) experiment: update of RCP4.5 based on SSP2
+(child) experiment_id: ssp245
+(child) external_variables: areacella
+(child) forcing_index: 1
+(child) frequency: mon
+(child) further_info_url: https://furtherinfo.es-doc.org/CMIP6.NCC.NorESM2-MM.ssp245.none.r1i1p1f1
+(child) grid: finite-volume grid with 0.9x1.25 degree lat/lon resolution
+(child) grid_label: gn
+(child) initialization_index: 1
+(child) institution: NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349), MET-Norway (Norwegian Meteorological Institute, Oslo 0313), NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006), NILU (Norwegian Institute for Air Research, Kjeller 2027), UiB (University of Bergen, Bergen 5007), UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway. Mailing address: NCC, c/o MET-Norway, Henrik Mohns plass 1, Oslo 0313, Norway
+(child) institution_id: NCC
+(child) land_fraction: 0.2935252133780654
+(child) land_fraction_northern_hemisphere: 0.39747748737081573
+(child) land_fraction_southern_hemisphere: 0.1895729388004517
+(child) license: CMIP6 model data produced by NCC is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https:///pcmdi.llnl.gov/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.
+(child) model_id: NorESM2-MM
+(child) netcdf-scm crunched file: CMIP6/ScenarioMIP/NCC/NorESM2-MM/ssp245/r1i1p1f1/Amon/tas/gn/v20191108/netcdf-scm_tas_Amon_NorESM2-MM_ssp245_r1i1p1f1_gn_201501-210012.nc
+(child) nominal_resolution: 100 km
+(child) original_name: TREFHT
+(child) parent_activity_id: CMIP
+(child) parent_experiment_id: historical
+(child) parent_mip_era: CMIP6
+(child) parent_source_id: NorESM2-MM
+(child) parent_sub_experiment_id: none
+(child) parent_time_units: days since 1850-01-01
+(child) parent_variant_label: r1i1p1f1
+(child) physics_index: 1
+(child) product: model-output
+(child) realization_index: 1
+(child) realm: atmos
+(child) run_variant: N/A
+(child) source: NorESM2-MM (2017): 
+aerosol: OsloAero
+atmos: CAM-OSLO (1 degree resolution; 288 x 192; 32 levels; top level 3 mb)
+atmosChem: OsloChemSimp
+land: CLM
+landIce: CISM
+ocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])
+ocnBgchem: HAMOCC
+seaIce: CICE
+(child) source_id: NorESM2-MM
+(child) source_type: AOGCM AER BGC
+(child) sub_experiment: none
+(child) sub_experiment_id: none
+(child) table_id: Amon
+(child) table_info: Creation Date:(24 July 2019) MD5:0bb394a356ef9d214d027f1aca45853e
+(child) title: NorESM2-MM output prepared for CMIP6
+(child) variable_id: tas
+(child) variant_label: r1i1p1f1
+(normalisation) Conventions: CF-1.7
+(normalisation) area_world (m**2): 510099700186440.0
+(normalisation) area_world_el_nino_n3.4 (m**2): 5965450973184.0
+(normalisation) area_world_land (m**2): 149727123341312.0
+(normalisation) area_world_north_atlantic_ocean (m**2): 39416760023364.38
+(normalisation) area_world_northern_hemisphere (m**2): 255049850085192.0
+(normalisation) area_world_northern_hemisphere_land (m**2): 101376573566165.34
+(normalisation) area_world_northern_hemisphere_ocean (m**2): 153673276492820.78
+(normalisation) area_world_ocean (m**2): 360372552859648.0
+(normalisation) area_world_southern_hemisphere (m**2): 255049850101248.0
+(normalisation) area_world_southern_hemisphere_land (m**2): 48350549624308.266
+(normalisation) area_world_southern_hemisphere_ocean (m**2): 206699300474485.3
+(normalisation) branch_method: Hybrid-restart from year 1200-01-01 of piControl-spinup
+(normalisation) branch_time: 0.0
+(normalisation) branch_time_in_child: 0.0
+(normalisation) branch_time_in_parent: 438000.0
+(normalisation) calendar: 365_day
+(normalisation) cell_measures: area: areacella
+(normalisation) cmor_version: 3.5.0
+(normalisation) comment: near-surface (usually, 2 meter) air temperature
+(normalisation) contact: Please send any requests or bug reports to noresm-ncc@met.no.
+(normalisation) crunch_contact: Zebedee Nicholls <zebedee.nicholls@climate-energy-college.org>, Jared Lewis <jared.lewis@climate-energy-college.org>, Malte Meinshausen <malte.meinshausen@unimelb.edu.au>
+(normalisation) crunch_netcdf_scm_version: 2.0.2+48.g89b377bc (see Nicholls et al. (2021, https://doi.org/10.1002/gdj3.113), more info at gitlab.com/netcdf-scm/netcdf-scm)
+(normalisation) crunch_netcdf_scm_weight_kwargs: {"regions": ["World", "World|Northern Hemisphere", "World|Southern Hemisphere", "World|Land", "World|Ocean", "World|Northern Hemisphere|Land", "World|Southern Hemisphere|Land", "World|Northern Hemisphere|Ocean", "World|Southern Hemisphere|Ocean", "World|El Nino N3.4", "World|North Atlantic Ocean"], "cell_weights": null}
+(normalisation) crunch_source_files: Files: ['/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_120001-120912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_121001-121912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_122001-122912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_123001-123912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_124001-124912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_125001-125912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_126001-126912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_127001-127912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_128001-128912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_129001-129912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_130001-130912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_131001-131912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_132001-132912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_133001-133912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_134001-134912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_135001-135912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_136001-136912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_137001-137912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_138001-138912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_139001-139912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_140001-140912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_141001-141912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_142001-142912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_143001-143912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_144001-144912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_145001-145912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_146001-146912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_147001-147912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_148001-148912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_149001-149912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_150001-150912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_151001-151912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_152001-152912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_153001-153912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_154001-154912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_155001-155912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_156001-156912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_157001-157912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_158001-158912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_159001-159912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_160001-160912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_161001-161912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_162001-162912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_163001-163912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_164001-164912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_165001-165912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_166001-166912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_167001-167912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_168001-168912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_169001-169912.nc']; areacella: ['/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/fx/areacella/gn/v20191108/areacella_fx_NorESM2-MM_piControl_r1i1p1f1_gn.nc']; sftlf: ['/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/fx/sftlf/gn/v20191108/sftlf_fx_NorESM2-MM_piControl_r1i1p1f1_gn.nc']
+(normalisation) data_specs_version: 01.00.31
+(normalisation) experiment: pre-industrial control
+(normalisation) experiment_id: piControl
+(normalisation) external_variables: areacella
+(normalisation) forcing_index: 1
+(normalisation) frequency: mon
+(normalisation) further_info_url: https://furtherinfo.es-doc.org/CMIP6.NCC.NorESM2-MM.piControl.none.r1i1p1f1
+(normalisation) grid: finite-volume grid with 0.9x1.25 degree lat/lon resolution
+(normalisation) grid_label: gn
+(normalisation) initialization_index: 1
+(normalisation) institution: NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349), MET-Norway (Norwegian Meteorological Institute, Oslo 0313), NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006), NILU (Norwegian Institute for Air Research, Kjeller 2027), UiB (University of Bergen, Bergen 5007), UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway. Mailing address: NCC, c/o MET-Norway, Henrik Mohns plass 1, Oslo 0313, Norway
+(normalisation) institution_id: NCC
+(normalisation) land_fraction: 0.2935252133780654
+(normalisation) land_fraction_northern_hemisphere: 0.39747748737081573
+(normalisation) land_fraction_southern_hemisphere: 0.1895729388004517
+(normalisation) license: CMIP6 model data produced by NCC is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https:///pcmdi.llnl.gov/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.
+(normalisation) model_id: NorESM2-MM
+(normalisation) netcdf-scm crunched file: CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/Amon/tas/gn/v20191108/netcdf-scm_tas_Amon_NorESM2-MM_piControl_r1i1p1f1_gn_120001-169912.nc
+(normalisation) nominal_resolution: 100 km
+(normalisation) original_name: TREFHT
+(normalisation) parent_activity_id: CMIP
+(normalisation) parent_experiment_id: piControl-spinup
+(normalisation) parent_mip_era: CMIP6
+(normalisation) parent_source_id: NorESM2-MM
+(normalisation) parent_sub_experiment_id: none
+(normalisation) parent_time_units: days since 0001-01-01
+(normalisation) parent_variant_label: r1i1p1f1
+(normalisation) physics_index: 1
+(normalisation) product: model-output
+(normalisation) realization_index: 1
+(normalisation) realm: atmos
+(normalisation) run_variant: N/A
+(normalisation) source: NorESM2-MM (2017): 
+aerosol: OsloAero
+atmos: CAM-OSLO (1 degree resolution; 288 x 192; 32 levels; top level 3 mb)
+atmosChem: OsloChemSimp
+land: CLM
+landIce: CISM
+ocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])
+ocnBgchem: HAMOCC
+seaIce: CICE
+(normalisation) source_id: NorESM2-MM
+(normalisation) source_type: AOGCM AER BGC
+(normalisation) sub_experiment: none
+(normalisation) sub_experiment_id: none
+(normalisation) table_id: Amon
+(normalisation) table_info: Creation Date:(24 July 2019) MD5:0bb394a356ef9d214d027f1aca45853e
+(normalisation) title: NorESM2-MM output prepared for CMIP6
+(normalisation) variable_id: tas
+(normalisation) variant_label: r1i1p1f1
+(parent) Conventions: CF-1.7
+(parent) area_world (m**2): 510099700186440.0
+(parent) area_world_el_nino_n3.4 (m**2): 5965450973184.0
+(parent) area_world_land (m**2): 149727123341312.0
+(parent) area_world_north_atlantic_ocean (m**2): 39416760023364.38
+(parent) area_world_northern_hemisphere (m**2): 255049850085192.0
+(parent) area_world_northern_hemisphere_land (m**2): 101376573566165.34
+(parent) area_world_northern_hemisphere_ocean (m**2): 153673276492820.78
+(parent) area_world_ocean (m**2): 360372552859648.0
+(parent) area_world_southern_hemisphere (m**2): 255049850101248.0
+(parent) area_world_southern_hemisphere_land (m**2): 48350549624308.266
+(parent) area_world_southern_hemisphere_ocean (m**2): 206699300474485.3
+(parent) branch_method: Hybrid-restart from year 1200-01-01 of piControl
+(parent) branch_time: 0.0
+(parent) branch_time_in_child: 0.0
+(parent) branch_time_in_parent: 438000.0
+(parent) calendar: 365_day
+(parent) cell_measures: area: areacella
+(parent) cmor_version: 3.5.0
+(parent) comment: near-surface (usually, 2 meter) air temperature
+(parent) contact: Please send any requests or bug reports to noresm-ncc@met.no.
+(parent) crunch_contact: Zebedee Nicholls <zebedee.nicholls@climate-energy-college.org>, Jared Lewis <jared.lewis@climate-energy-college.org>, Malte Meinshausen <malte.meinshausen@unimelb.edu.au>
+(parent) crunch_netcdf_scm_version: 2.0.2+48.g89b377bc (see Nicholls et al. (2021, https://doi.org/10.1002/gdj3.113), more info at gitlab.com/netcdf-scm/netcdf-scm)
+(parent) crunch_netcdf_scm_weight_kwargs: {"regions": ["World", "World|Northern Hemisphere", "World|Southern Hemisphere", "World|Land", "World|Ocean", "World|Northern Hemisphere|Land", "World|Southern Hemisphere|Land", "World|Northern Hemisphere|Ocean", "World|Southern Hemisphere|Ocean", "World|El Nino N3.4", "World|North Atlantic Ocean"], "cell_weights": null}
+(parent) crunch_source_files: Files: ['/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_185001-185912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_186001-186912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_187001-187912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_188001-188912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_189001-189912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_190001-190912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_191001-191912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_192001-192912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_193001-193912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_194001-194912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_195001-195912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_196001-196912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_197001-197912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_198001-198912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_199001-199912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_200001-200912.nc', '/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_201001-201412.nc']; areacella: ['/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/fx/areacella/gn/v20191108/areacella_fx_NorESM2-MM_historical_r1i1p1f1_gn.nc']; sftlf: ['/CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/fx/sftlf/gn/v20191108/sftlf_fx_NorESM2-MM_historical_r1i1p1f1_gn.nc']
+(parent) data_specs_version: 01.00.31
+(parent) experiment: all-forcing simulation of the recent past
+(parent) experiment_id: historical
+(parent) external_variables: areacella
+(parent) forcing_index: 1
+(parent) frequency: mon
+(parent) further_info_url: https://furtherinfo.es-doc.org/CMIP6.NCC.NorESM2-MM.historical.none.r1i1p1f1
+(parent) grid: finite-volume grid with 0.9x1.25 degree lat/lon resolution
+(parent) grid_label: gn
+(parent) initialization_index: 1
+(parent) institution: NorESM Climate modeling Consortium consisting of CICERO (Center for International Climate and Environmental Research, Oslo 0349), MET-Norway (Norwegian Meteorological Institute, Oslo 0313), NERSC (Nansen Environmental and Remote Sensing Center, Bergen 5006), NILU (Norwegian Institute for Air Research, Kjeller 2027), UiB (University of Bergen, Bergen 5007), UiO (University of Oslo, Oslo 0313) and UNI (Uni Research, Bergen 5008), Norway. Mailing address: NCC, c/o MET-Norway, Henrik Mohns plass 1, Oslo 0313, Norway
+(parent) institution_id: NCC
+(parent) land_fraction: 0.2935252133780654
+(parent) land_fraction_northern_hemisphere: 0.39747748737081573
+(parent) land_fraction_southern_hemisphere: 0.1895729388004517
+(parent) license: CMIP6 model data produced by NCC is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https:///pcmdi.llnl.gov/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.
+(parent) model_id: NorESM2-MM
+(parent) netcdf-scm crunched file: CMIP6/CMIP/NCC/NorESM2-MM/historical/r1i1p1f1/Amon/tas/gn/v20191108/netcdf-scm_tas_Amon_NorESM2-MM_historical_r1i1p1f1_gn_185001-201412.nc
+(parent) nominal_resolution: 100 km
+(parent) original_name: TREFHT
+(parent) parent_activity_id: CMIP
+(parent) parent_experiment_id: piControl
+(parent) parent_mip_era: CMIP6
+(parent) parent_source_id: NorESM2-MM
+(parent) parent_sub_experiment_id: none
+(parent) parent_time_units: days since 0001-01-01
+(parent) parent_variant_label: r1i1p1f1
+(parent) physics_index: 1
+(parent) product: model-output
+(parent) realization_index: 1
+(parent) realm: atmos
+(parent) run_variant: N/A
+(parent) source: NorESM2-MM (2017): 
+aerosol: OsloAero
+atmos: CAM-OSLO (1 degree resolution; 288 x 192; 32 levels; top level 3 mb)
+atmosChem: OsloChemSimp
+land: CLM
+landIce: CISM
+ocean: MICOM (1 degree resolution; 360 x 384; 70 levels; top grid cell minimum 0-2.5 m [native model uses hybrid density and generic upper-layer coordinate interpolated to z-level for contributed data])
+ocnBgchem: HAMOCC
+seaIce: CICE
+(parent) source_id: NorESM2-MM
+(parent) source_type: AOGCM AER BGC
+(parent) sub_experiment: none
+(parent) sub_experiment_id: none
+(parent) table_id: Amon
+(parent) table_info: Creation Date:(24 July 2019) MD5:0bb394a356ef9d214d027f1aca45853e
+(parent) title: NorESM2-MM output prepared for CMIP6
+(parent) variable_id: tas
+(parent) variant_label: r1i1p1f1
+normalisation method: 21-yr-running-mean
+
+&THISFILE_SPECIFICATIONS
+    THISFILE_DATACOLUMNS = 11
+    THISFILE_DATAROWS = 251
+    THISFILE_FIRSTYEAR = 1850
+    THISFILE_LASTYEAR = 2100
+    THISFILE_ANNUALSTEPS = 1
+    THISFILE_DATTYPE = 'MAG'
+    THISFILE_REGIONMODE = 'NONE'
+    THISFILE_TIMESERIESTYPE = 'AVERAGE_YEAR_MID_YEAR'
+    THISFILE_FIRSTDATAROW = 255
+/
+
+   VARIABLE                 tas                 tas                 tas                 tas                 tas                 tas                 tas                 tas                 tas                 tas                 tas
+       TODO                 SET                 SET                 SET                 SET                 SET                 SET                 SET                 SET                 SET                 SET                 SET
+      UNITS                   K                   K                   K                   K                   K                   K                   K                   K                   K                   K                   K
+      YEARS               WORLD                 N34                LAND                 AMV                  NH              NHLAND             NHOCEAN               OCEAN                  SH              SHLAND             SHOCEAN
+       1850         1.26097e-01        -6.86401e-01         2.28669e-01        -3.01551e-01         9.90286e-02         1.23955e-01         8.25846e-02         8.34787e-02         1.53166e-01         4.48199e-01         8.41523e-02
+       1851         1.52020e-01        -2.06104e-01         3.07856e-01        -2.06874e-01         8.08892e-02         8.33190e-02         7.92863e-02         8.72856e-02         2.23151e-01         7.78624e-01         9.32162e-02
+       1852         5.36773e-02        -1.11316e+00         1.07672e-01        -2.14318e-01        -6.66166e-02        -2.16442e-03        -1.09135e-01         3.12500e-02         1.73971e-01         3.37940e-01         1.35616e-01
+       1853         3.02301e-02        -5.21025e-02        -6.31702e-02        -1.01676e-01        -1.20515e-01        -2.21841e-01        -5.36712e-02         6.90398e-02         1.80975e-01         2.69469e-01         1.60275e-01
+       1854         3.01569e-01         1.91675e+00         2.47109e-01         4.37041e-02         1.82667e-01         6.49142e-02         2.60347e-01         3.24182e-01         4.20470e-01         6.29126e-01         3.71662e-01
+       1855         3.05108e-01        -1.28610e+00         5.07947e-01         1.16687e-01         2.31394e-01         3.72513e-01         1.38299e-01         2.20834e-01         3.78823e-01         7.91911e-01         2.82194e-01
+       1856        -3.97838e-02        -2.29839e+00         1.47760e-01         5.20301e-02        -2.53554e-02         2.13706e-01        -1.83062e-01        -1.17713e-01        -5.42122e-02         9.50978e-03        -6.91179e-02
+       1857        -6.15970e-02        -4.72622e-01        -1.60510e-02        -2.27179e-03        -8.27618e-02         1.21478e-02        -1.45373e-01        -8.05257e-02        -4.04321e-02        -7.51604e-02        -3.23086e-02
+       1858        -5.95903e-02         7.86947e-02        -3.06744e-02         7.14100e-02        -5.09279e-02         2.84149e-02        -1.03269e-01        -7.15992e-02        -6.82527e-02        -1.54588e-01        -4.80575e-02
+       1859        -2.58049e-02        -3.65333e-01         2.35382e-02         9.22071e-03         4.61258e-02         9.62956e-02         1.30293e-02        -4.63129e-02        -9.77356e-02        -1.28995e-01        -9.04235e-02
+       1860         5.29757e-02        -4.35060e-01         8.24959e-02        -8.56571e-02         8.33014e-02         1.40434e-01         4.56113e-02         4.07034e-02         2.26500e-02        -3.89758e-02         3.70654e-02
+       1861        -5.18638e-02        -9.24460e-01         2.04077e-02        -1.39810e-01        -5.34008e-02         8.48600e-02        -1.44610e-01        -8.19062e-02        -5.03268e-02        -1.14725e-01        -3.52629e-02
+       1862        -2.85117e-02         9.83968e-02         2.37310e-02         7.50560e-02         2.11162e-02         1.17689e-01        -4.25916e-02        -5.02154e-02        -7.81396e-02        -1.73275e-01        -5.58858e-02
+       1863         5.29054e-02         6.23700e-01         9.95033e-02        -3.48713e-01         7.84499e-02         1.14804e-01         5.44677e-02         3.35426e-02         2.73610e-02         6.74300e-02         1.79882e-02
+       1864         1.97658e-01         1.06444e+00         2.50548e-01        -1.62865e-01         3.05578e-01         3.29811e-01         2.89591e-01         1.75680e-01         8.97381e-02         8.43605e-02         9.09961e-02
+       1865         2.57963e-01         1.27682e+00         2.47267e-01         6.47881e-02         3.76157e-01         3.49847e-01         3.93513e-01         2.62402e-01         1.39769e-01         3.22099e-02         1.64929e-01
+       1866         4.26761e-01         2.22207e+00         5.20048e-01         2.68374e-01         5.39971e-01         6.00464e-01         5.00064e-01         3.88004e-01         3.13552e-01         3.51476e-01         3.04680e-01
+       1867         3.93303e-01        -7.10475e-01         6.40261e-01         5.14194e-01         4.36352e-01         7.05578e-01         2.58746e-01         2.90701e-01         3.50255e-01         5.03314e-01         3.14451e-01
+       1868         3.29595e-02        -2.37404e+00         5.10396e-02         2.11835e-01         1.53155e-02         5.85358e-02        -1.31965e-02         2.54421e-02         5.06036e-02         3.53098e-02         5.41811e-02
+       1869        -9.26094e-03        -1.15428e+00         5.28657e-02         7.32667e-02        -4.10570e-02         7.35563e-02        -1.16666e-01        -3.50786e-02         2.25351e-02         9.48554e-03         2.55876e-02
+       1870        -8.16686e-02        -1.11892e+00        -2.31643e-01         2.42083e-01        -1.38747e-01        -2.08430e-01        -9.27772e-02        -1.93588e-02        -2.45904e-02        -2.80290e-01         3.52221e-02
+       1871         3.88043e-02        -6.81798e-01         3.35943e-02         2.59011e-01         1.70342e-02         6.60365e-02        -1.52920e-02         4.09713e-02         6.05744e-02        -3.44255e-02         8.27965e-02
+       1872         8.57581e-02        -2.97145e-01         7.15506e-02         1.93451e-01         1.42203e-01         2.20938e-01         9.02619e-02         9.16686e-02         2.93133e-02        -2.41679e-01         9.27032e-02
+       1873         7.46108e-02         1.88716e-01        -1.87541e-02        -4.41062e-04         4.94026e-02        -1.09610e-01         1.54301e-01         1.13402e-01         9.98189e-02         1.71726e-01         8.29984e-02
+       1874         3.47254e-01         1.71835e+00         4.65189e-01         4.14318e-01         4.21563e-01         5.20115e-01         3.56550e-01         2.98257e-01         2.72945e-01         3.50019e-01         2.54916e-01
+       1875         2.49721e-01        -3.91948e-02         3.61521e-01         2.76313e-01         2.70884e-01         3.65610e-01         2.08395e-01         2.03262e-01         2.28558e-01         3.52936e-01         1.99464e-01
+       1876         8.70603e-02         7.73161e-02        -1.28989e-02         1.36790e-01         9.72179e-02        -4.06239e-02         1.88151e-01         1.28595e-01         7.69028e-02         4.52430e-02         8.43086e-02
+       1877         3.15309e-01         1.40413e+00         4.56860e-01         4.33366e-01         2.98818e-01         4.86359e-01         1.75099e-01         2.56502e-01         3.31800e-01         3.95001e-01         3.17016e-01
+       1878         1.39486e-01        -1.20437e+00         2.82529e-01         2.29633e-01         1.65889e-01         3.77145e-01         2.65257e-02         8.00444e-02         1.13084e-01         8.41450e-02         1.19853e-01
+       1879         2.78728e-02        -4.27055e-01         9.56476e-02        -4.24311e-02         1.98143e-02         1.15707e-01        -4.34452e-02        -2.75062e-04         3.59313e-02         5.35889e-02         3.18009e-02
+       1880         5.40599e-02         4.36731e-01         8.82610e-02        -2.86152e-02        -1.54880e-02         6.32870e-02        -6.74549e-02         3.98521e-02         1.23608e-01         1.40613e-01         1.19630e-01
+       1881         3.63218e-01         2.11732e+00         3.97016e-01         1.45666e-01         3.55865e-01         3.61085e-01         3.52421e-01         3.49177e-01         3.70571e-01         4.72363e-01         3.46760e-01
+       1882         2.40574e-01        -1.01038e+00         3.88603e-01         2.86457e-01         1.85434e-01         3.51806e-01         7.56805e-02         1.79068e-01         2.95715e-01         4.65760e-01         2.55938e-01
+       1883        -8.07029e-02        -1.86626e+00        -1.48977e-01         2.30067e-01        -1.49632e-01        -1.49691e-01        -1.49593e-01        -5.23461e-02        -1.17735e-02        -1.47468e-01         1.99679e-02
+       1884        -3.67830e-01        -1.08050e+00        -5.42330e-01        -1.18334e-01        -4.77344e-01        -5.12693e-01        -4.54025e-01        -2.95322e-01        -2.58315e-01        -6.04494e-01        -1.77338e-01
+       1885        -3.96236e-01        -6.47502e-01        -4.64198e-01        -3.06170e-01        -4.56346e-01        -3.71343e-01        -5.12421e-01        -3.68009e-01        -3.36126e-01        -6.58873e-01        -2.60630e-01
+       1886        -1.09196e-01         5.75269e-01        -1.94769e-01        -1.91253e-01        -1.46564e-01        -1.62593e-01        -1.35991e-01        -7.36408e-02        -7.18280e-02        -2.62231e-01        -2.72894e-02
+       1887        -1.84289e-03         1.10060e+00        -3.82609e-02        -6.56859e-02        -8.07381e-02        -5.87435e-02        -9.52477e-02         1.32860e-02         7.70523e-02         4.67390e-03         9.39829e-02
+       1888         1.35834e-01         1.38389e+00         2.61386e-02         5.84666e-02         9.49365e-02        -3.47451e-02         1.80486e-01         1.81412e-01         1.76732e-01         1.53801e-01         1.82096e-01
+       1889         1.68888e-01        -1.66114e-01         3.30026e-01        -2.77876e-02         1.69909e-01         3.21441e-01         6.99446e-02         1.01923e-01         1.67867e-01         3.48015e-01         1.25727e-01
+       1890         1.50291e-03        -9.46657e-01        -3.14386e-02        -1.09252e-01        -7.44255e-02        -1.44173e-01        -2.84135e-02         1.51805e-02         7.74313e-02         2.04927e-01         4.76078e-02
+       1891        -2.86633e-02         8.02298e-01        -1.96138e-01        -5.30535e-02        -1.46435e-01        -2.62240e-01        -7.00390e-02         4.09204e-02         8.91080e-02        -5.75734e-02         1.23419e-01
+       1892         9.54644e-02         6.99026e-01         3.81457e-02        -1.23776e-01        -2.97590e-02        -3.13335e-02        -2.87204e-02         1.19280e-01         2.20688e-01         1.83822e-01         2.29311e-01
+       1893        -2.79223e-02        -1.99395e-01        -1.28446e-01        -8.54047e-02        -1.76191e-01        -2.55367e-01        -1.23960e-01         1.38402e-02         1.20347e-01         1.37673e-01         1.16294e-01
+       1894         1.00962e-01         2.36062e-01         1.53451e-01        -2.36057e-02         1.39360e-01         2.97584e-01         3.49820e-02         7.91560e-02         6.25645e-02        -1.48748e-01         1.11994e-01
+       1895         3.46863e-02         2.89097e-01        -4.99362e-02        -4.12201e-02        -6.33177e-02        -8.86106e-02        -4.66323e-02         6.98395e-02         1.32690e-01         3.11509e-02         1.56442e-01
+       1896         1.13596e-01         4.42874e-01         1.08446e-01        -2.22718e-01         7.64759e-02         1.02751e-01         5.91426e-02         1.15738e-01         1.50717e-01         1.20372e-01         1.57815e-01
+       1897         1.54376e-01         8.91218e-01         6.43636e-02        -1.11961e-01         1.15160e-01         6.60176e-02         1.47579e-01         1.91767e-01         1.93591e-01         6.09357e-02         2.24622e-01
+       1898         1.94370e-01         7.28962e-01         2.34953e-01        -1.39366e-02         1.72373e-01         2.38094e-01         1.29017e-01         1.77508e-01         2.16366e-01         2.28373e-01         2.13558e-01
+       1899         3.01926e-01         1.15654e+00         3.19019e-01         4.30436e-02         2.38336e-01         2.59515e-01         2.24364e-01         2.94820e-01         3.65516e-01         4.43768e-01         3.47211e-01
+       1900         2.48066e-01         6.37489e-01         2.61019e-01         2.19785e-01         1.87004e-01         1.63243e-01         2.02679e-01         2.42688e-01         3.09128e-01         4.66025e-01         2.72427e-01
+       1901         1.81700e-01        -8.90050e-01         2.88784e-01        -2.36372e-01         2.07515e-01         3.22178e-01         1.31872e-01         1.37208e-01         1.55885e-01         2.18762e-01         1.41177e-01
+       1902         9.92098e-02         4.61091e-02         4.45368e-02        -7.70405e-02         9.03015e-02         2.01306e-02         1.36593e-01         1.21921e-01         1.08118e-01         9.56983e-02         1.11023e-01
+       1903         9.52983e-02         1.75929e+00        -5.72179e-02        -1.52865e-01         2.87154e-02        -1.87469e-01         1.71330e-01         1.58672e-01         1.61881e-01         2.15863e-01         1.49254e-01
+       1904         9.11050e-02        -6.81466e-01         8.95244e-02         8.37884e-03         1.16775e-01         1.31608e-01         1.06990e-01         9.17598e-02         6.54350e-02         1.28014e-03         8.04420e-02
+       1905        -3.67688e-02        -1.57782e+00         2.70129e-02        -1.20814e-01         3.06169e-02         1.37140e-01        -3.96555e-02        -6.32686e-02        -1.04155e-01        -2.03888e-01        -8.08252e-02
+       1906        -9.99854e-03        -4.35075e-01         4.09065e-02         7.94379e-02         3.61489e-02         7.45021e-02         1.08478e-02        -3.11544e-02        -5.61460e-02        -2.95382e-02        -6.23700e-02
+       1907        -1.43227e-01        -7.45394e-01        -2.50431e-01        -1.46813e-02        -2.46483e-01        -3.19430e-01        -1.98360e-01        -9.86826e-02        -3.99716e-02        -1.05754e-01        -2.45840e-02
+       1908        -8.12735e-02        -1.80666e-01        -2.75083e-01        -5.66957e-02        -2.76901e-01        -4.59670e-01        -1.56330e-01        -7.62738e-04         1.14354e-01         1.11969e-01         1.14912e-01
+       1909        -5.37237e-02        -6.68092e-01        -1.53011e-01        -4.33617e-02        -1.77514e-01        -2.94756e-01        -1.00171e-01        -1.24678e-02         7.00670e-02         1.44205e-01         5.27249e-02
+       1910        -5.40864e-02         1.03608e-01        -1.00719e-01        -1.73639e-01        -1.37925e-01        -1.40240e-01        -1.36399e-01        -3.47084e-02         2.97527e-02        -1.78493e-02         4.08877e-02
+       1911         1.84298e-01         1.30584e+00         2.31050e-01         2.25096e-01         1.42561e-01         1.89190e-01         1.11801e-01         1.64865e-01         2.26034e-01         3.18816e-01         2.04331e-01
+       1912         8.20737e-02         9.83604e-01        -4.86981e-02        -7.17214e-02        -4.59083e-02        -2.80065e-01         1.08562e-01         1.36409e-01         2.10056e-01         4.36380e-01         1.57114e-01
+       1913         1.09929e-01         1.10558e+00         6.13006e-02        -2.33891e-01         5.16094e-02        -1.06240e-02         9.26640e-02         1.30129e-01         1.68249e-01         2.12089e-01         1.57994e-01
+       1914         1.75521e-01         6.61450e-01         2.11213e-01         1.78026e-01         1.64519e-01         2.04683e-01         1.38023e-01         1.60687e-01         1.86523e-01         2.24908e-01         1.77544e-01
+       1915         4.11120e-02        -5.34237e-01         6.66952e-02         1.34958e-01         2.29880e-02         2.03863e-02         2.47044e-02         3.04822e-02         5.92360e-02         1.63809e-01         3.47747e-02
+       1916        -7.03520e-02        -1.97382e-01        -1.03092e-01        -7.73857e-03        -1.78938e-01        -2.91676e-01        -1.04565e-01        -5.67547e-02         3.82337e-02         2.92314e-01        -2.12000e-02
+       1917         1.31494e-02         7.76444e-02         1.22603e-01         2.00789e-02         1.34949e-02         1.20392e-01        -5.70237e-02        -3.23276e-02         1.28040e-02         1.27239e-01        -1.39642e-02
+       1918         1.08499e-02         4.83308e-01        -4.98627e-02         2.05444e-02        -5.02685e-02        -1.03243e-01        -1.53216e-02         3.60745e-02         7.19683e-02         6.20252e-02         7.42941e-02
+       1919         1.45044e-01         1.29852e+00         1.65416e-01        -1.41925e-02         1.22983e-01         1.72457e-01         9.03456e-02         1.36581e-01         1.67105e-01         1.50651e-01         1.70954e-01
+       1920         1.46999e-01         5.32858e-01         2.68274e-01         2.78128e-01         6.28530e-02         1.47598e-01         6.94792e-03         9.66125e-02         2.31146e-01         5.21281e-01         1.63278e-01
+       1921         6.27676e-02         1.28148e-01         1.29019e-01         2.03882e-01         4.25917e-02         1.49001e-01        -2.76052e-02         3.52416e-02         8.29434e-02         8.71380e-02         8.19623e-02
+       1922        -1.39145e-01        -1.15318e+00        -1.56003e-01         8.92531e-02        -1.78183e-01        -1.06754e-01        -2.25304e-01        -1.32137e-01        -1.00107e-01        -2.59259e-01        -6.28781e-02
+       1923        -2.66484e-01        -1.43214e+00        -3.77264e-01        -9.82978e-02        -4.57593e-01        -5.72830e-01        -3.81572e-01        -2.20454e-01        -7.53759e-02         3.27888e-02        -1.00677e-01
+       1924        -2.69455e-01        -1.32539e+00        -3.34951e-01        -1.83265e-01        -4.48043e-01        -4.07470e-01        -4.74809e-01        -2.42241e-01        -9.08666e-02        -1.82892e-01        -6.93402e-02
+       1925        -3.13734e-01        -7.78251e-01        -3.36378e-01        -2.63000e-01        -4.59648e-01        -3.81591e-01        -5.11142e-01        -3.04324e-01        -1.67819e-01        -2.41572e-01        -1.50567e-01
+       1926        -1.79376e-01        -2.56193e-02        -1.72607e-01        -3.11090e-01        -3.14584e-01        -2.10873e-01        -3.83000e-01        -1.82188e-01        -4.41692e-02        -9.23581e-02        -3.28970e-02
+       1927        -1.06281e-01        -3.41884e-01        -2.53976e-03        -2.45081e-01        -1.48487e-01         5.46403e-03        -2.50046e-01        -1.49385e-01        -6.40746e-02        -1.92990e-02        -7.45485e-02
+       1928        -1.22829e-01        -3.30511e-01        -1.93813e-01        -1.98479e-01        -1.88583e-01        -1.73907e-01        -1.98264e-01        -9.33341e-02        -5.70745e-02        -2.35574e-01        -1.53204e-02
+       1929        -8.98928e-02         5.91992e-01        -3.36476e-01        -1.45372e-01        -1.77889e-01        -3.62306e-01        -5.62309e-02         1.25675e-02        -1.89695e-03        -2.82326e-01         6.37003e-02
+       1930         1.57784e-01         8.10945e-01         1.69477e-01        -7.06324e-02         1.30987e-01         1.20172e-01         1.38122e-01         1.52923e-01         1.84580e-01         2.72876e-01         1.63926e-01
+       1931         2.46205e-01         6.31396e-01         3.90436e-01         6.57596e-02         1.95413e-01         3.31341e-01         1.05742e-01         1.86279e-01         2.96998e-01         5.14330e-01         2.46160e-01
+       1932        -8.45235e-02        -1.76970e+00        -5.53853e-02        -3.79518e-01        -1.79201e-01        -1.36607e-01        -2.07300e-01        -9.66306e-02         1.01543e-02         1.14902e-01        -1.43481e-02
+       1933         8.93391e-02         7.26440e-01         1.59727e-01        -3.60306e-02         5.70003e-02         1.77356e-01        -2.23967e-02         6.00945e-02         1.21678e-01         1.22744e-01         1.21429e-01
+       1934         2.18938e-01         1.54538e+00         2.10206e-01         2.46717e-01         1.25966e-01         1.63130e-02         1.98302e-01         2.22565e-01         3.11910e-01         6.16743e-01         2.40605e-01
+       1935         7.38109e-02        -3.79577e-01         9.56055e-02         2.37922e-01        -2.78399e-02        -2.94937e-02        -2.67490e-02         6.47599e-02         1.75462e-01         3.57891e-01         1.32788e-01
+       1936        -6.46425e-02        -2.21926e-01        -1.64198e-01        -7.81557e-02        -1.45328e-01        -2.28729e-01        -9.03095e-02        -2.32741e-02         1.60433e-02        -2.88746e-02         2.65504e-02
+       1937         8.79959e-03         7.40492e-01        -7.98681e-02        -2.76915e-01        -7.53060e-02        -2.17453e-01         1.84668e-02         4.56437e-02         9.29052e-02         2.08598e-01         6.58427e-02
+       1938         1.68175e-01         2.19541e-01         2.49450e-01        -9.55388e-02         1.63691e-01         2.08562e-01         1.34090e-01         1.34397e-01         1.72658e-01         3.35167e-01         1.34645e-01
+       1939         2.54151e-01         1.01147e+00         2.23516e-01        -4.70870e-02         3.01683e-01         2.51395e-01         3.34858e-01         2.66873e-01         2.06619e-01         1.65057e-01         2.16342e-01
+       1940         3.42943e-01         1.22514e+00         3.92905e-01         3.64676e-02         4.03548e-01         4.22636e-01         3.90956e-01         3.22180e-01         2.82337e-01         3.30584e-01         2.71052e-01
+       1941         2.72862e-01         5.53359e-01         2.84928e-01         1.40313e-01         3.74042e-01         3.61999e-01         3.81986e-01         2.67850e-01         1.71683e-01         1.23326e-01         1.82995e-01
+       1942         2.65282e-01         8.35309e-01         2.42867e-01         1.93773e-01         2.66491e-01         1.33302e-01         3.54354e-01         2.74594e-01         2.64072e-01         4.72585e-01         2.15298e-01
+       1943         1.31563e-01        -8.05515e-01         1.20369e-01         1.07132e-01         8.21129e-02         4.57477e-02         1.06103e-01         1.36211e-01         1.81013e-01         2.76813e-01         1.58604e-01
+       1944         7.90171e-02        -1.05763e+00         8.65135e-02         3.23472e-02         4.10192e-02         1.27668e-02         5.96569e-02         7.58964e-02         1.17015e-01         2.41136e-01         8.79810e-02
+       1945         1.75192e-01         9.10726e-01         2.14916e-01        -2.85387e-01         1.45020e-01         1.65714e-01         1.31369e-01         1.58679e-01         2.05364e-01         3.18087e-01         1.78996e-01
+       1946         1.27342e-01         1.16401e-01         1.64753e-02         4.57578e-02         2.93594e-02        -1.59042e-01         1.53646e-01         1.73403e-01         2.25324e-01         3.84476e-01         1.88095e-01
+       1947         1.28167e-01         8.08985e-01         2.91751e-02        -6.03902e-02         1.10881e-01         3.63831e-03         1.81628e-01         1.69300e-01         1.45454e-01         8.27012e-02         1.60133e-01
+       1948         3.69165e-01         1.11772e+00         5.07285e-01         1.49973e-01         4.08987e-01         4.75968e-01         3.64801e-01         3.11774e-01         3.29342e-01         5.72964e-01         2.72355e-01
+       1949         3.74190e-01         6.38718e-01         4.91792e-01         7.89223e-02         5.57631e-01         6.65206e-01         4.86666e-01         3.25323e-01         1.90749e-01         1.28205e-01         2.05379e-01
+       1950         4.42232e-01         1.78914e+00         5.53701e-01        -6.59159e-02         5.77760e-01         6.71062e-01         5.16210e-01         3.95920e-01         3.06705e-01         3.07640e-01         3.06486e-01
+       1951         5.20152e-01         1.92481e+00         6.08835e-01         2.38832e-01         5.38270e-01         5.04640e-01         5.60456e-01         4.83315e-01         5.02033e-01         8.27277e-01         4.25952e-01
+       1952         3.21593e-01        -6.46931e-02         3.01354e-01         3.22514e-01         3.58345e-01         3.49103e-01         3.64441e-01         3.30004e-01         2.84841e-01         2.01231e-01         3.04399e-01
+       1953         2.82524e-01         9.56227e-01         2.60535e-01         2.81824e-01         2.59086e-01         1.59344e-01         3.24884e-01         2.91667e-01         3.05962e-01         4.72669e-01         2.66966e-01
+       1954         3.65746e-01         7.34585e-01         4.16814e-01         2.81879e-01         3.68187e-01         3.69343e-01         3.67425e-01         3.44523e-01         3.63305e-01         5.16326e-01         3.27511e-01
+       1955         1.85314e-01        -2.03835e-01         1.85664e-01         5.98144e-02         1.72357e-01         1.58170e-01         1.81716e-01         1.85180e-01         1.98271e-01         2.43310e-01         1.87735e-01
+       1956         8.01423e-02        -1.15698e+00         1.12882e-01         1.33230e-01         6.36966e-03         1.12540e-01        -6.36699e-02         6.65438e-02         1.53915e-01         1.13601e-01         1.63345e-01
+       1957         7.91605e-03        -8.21554e-01        -7.51225e-02        -3.22863e-01        -8.94419e-02        -1.78405e-01        -3.07540e-02         4.24028e-02         1.05274e-01         1.41448e-01         9.68123e-02
+       1958         9.35871e-02         4.84538e-01        -1.48932e-01        -1.02928e-01        -6.64239e-03        -2.71181e-01         1.67871e-01         1.94350e-01         1.93817e-01         1.07401e-01         2.14031e-01
+       1959         3.03591e-01         1.24187e+00         3.02955e-01        -1.62453e-01         2.95111e-01         3.08469e-01         2.86299e-01         3.03849e-01         3.12071e-01         2.91426e-01         3.16900e-01
+       1960         3.77131e-01         1.10242e+00         4.24815e-01        -2.99974e-02         3.96995e-01         5.03757e-01         3.26565e-01         3.57318e-01         3.57267e-01         2.59295e-01         3.80184e-01
+       1961         5.20357e-01         2.32770e+00         6.36466e-01         6.21953e-02         4.55184e-01         5.49564e-01         3.92923e-01         4.72118e-01         5.85529e-01         8.18674e-01         5.30993e-01
+       1962         5.30193e-01         1.69374e+00         6.36185e-01         3.05242e-01         3.89113e-01         5.06706e-01         3.11537e-01         4.86160e-01         6.71274e-01         9.07654e-01         6.15981e-01
+       1963         2.45949e-01        -2.32833e-01         1.77478e-01         2.80743e-02         1.89605e-01         7.54585e-02         2.64906e-01         2.74391e-01         3.02293e-01         3.91424e-01         2.81444e-01
+       1964         4.42512e-02        -4.02780e-01         9.22027e-02        -1.25031e-01         6.86470e-02         1.42547e-01         1.98958e-02         2.43332e-02         1.98553e-02        -1.33789e-02         2.76294e-02
+       1965        -6.24493e-02        -6.89438e-01        -1.92409e-01        -4.17255e-03        -1.73946e-01        -2.53808e-01        -1.21262e-01        -8.45608e-03         4.90473e-02        -6.36432e-02         7.54076e-02
+       1966        -1.36337e-01        -1.73725e+00        -2.01605e-01        -1.06004e-01        -3.48644e-01        -3.54661e-01        -3.44674e-01        -1.09219e-01         7.59699e-02         1.19336e-01         6.58257e-02
+       1967        -2.82051e-01        -1.61302e+00        -5.20804e-01        -1.48875e-01        -5.38170e-01        -6.47848e-01        -4.65816e-01        -1.82850e-01        -2.59319e-02        -2.54417e-01         2.75147e-02
+       1968        -9.78584e-02        -9.11675e-01        -1.88242e-01        -1.18371e-01        -3.45193e-01        -3.59147e-01        -3.35988e-01        -6.03089e-02         1.49477e-01         1.70083e-01         1.44656e-01
+       1969        -1.37493e-01        -1.13260e+00        -2.49560e-01        -1.79123e-01        -4.14198e-01        -3.10043e-01        -4.82909e-01        -9.09304e-02         1.39212e-01        -1.22730e-01         2.00485e-01
+       1970        -9.72070e-02        -1.12807e+00        -2.66027e-01        -2.08735e-01        -4.79077e-01        -5.65216e-01        -4.22253e-01        -2.70603e-02         2.84663e-01         3.61264e-01         2.66745e-01
+       1971        -1.01462e-01        -7.74402e-01        -3.04869e-01        -5.13073e-01        -4.51268e-01        -5.62903e-01        -3.77623e-01        -1.69456e-02         2.48345e-01         2.36159e-01         2.51195e-01
+       1972         1.26431e-01         6.16096e-01         3.20269e-02        -1.19729e-01        -1.29153e-01        -7.02713e-02        -1.67996e-01         1.65660e-01         3.82015e-01         2.46513e-01         4.13712e-01
+       1973         1.71238e-01         2.00003e-01         3.27959e-03        -1.45197e-01        -1.32711e-01        -3.24251e-01        -6.35366e-03         2.41012e-01         4.75187e-01         6.90030e-01         4.24931e-01
+       1974         3.03846e-01         1.36711e+00         1.72049e-01         8.95620e-02         1.03193e-01         2.05413e-02         1.57717e-01         3.58600e-01         5.04499e-01         4.89718e-01         5.07957e-01
+       1975         3.34206e-01         1.43561e+00         1.34366e-01         2.26168e-01         1.06421e-01        -4.19136e-02         2.04276e-01         4.17229e-01         5.61990e-01         5.03992e-01         5.75556e-01
+       1976         2.42112e-01        -4.99373e-01         3.18161e-01         4.96411e-02         1.24654e-01         2.59800e-01         3.54995e-02         2.10511e-01         3.59570e-01         4.40522e-01         3.40633e-01
+       1977         3.39347e-01         5.94543e-01         4.10313e-01         7.42703e-02         2.09541e-01         3.39815e-01         1.23601e-01         3.09872e-01         4.69153e-01         5.58132e-01         4.48340e-01
+       1978         4.40574e-01         1.71633e+00         4.67505e-01         1.71362e-02         3.61443e-01         4.18884e-01         3.23549e-01         4.29375e-01         5.19705e-01         5.69468e-01         5.08064e-01
+       1979         5.28968e-01         2.00457e+00         6.82170e-01         4.84103e-01         4.92165e-01         6.26464e-01         4.03570e-01         4.65308e-01         5.65772e-01         7.98981e-01         5.11220e-01
+       1980         3.32482e-01        -9.71391e-01         4.51322e-01         3.81560e-01         2.26013e-01         4.14711e-01         1.01531e-01         2.83110e-01         4.38951e-01         5.28070e-01         4.18105e-01
+       1981         3.28596e-01        -4.44584e-01         3.00373e-01         2.03653e-01         2.20494e-01         2.03741e-01         2.31545e-01         3.40328e-01         4.36698e-01         5.03015e-01         4.21185e-01
+       1982         2.27250e-01        -9.83026e-01         2.82162e-01         1.57602e-01         1.52883e-01         1.97918e-01         1.23175e-01         2.04426e-01         3.01616e-01         4.58813e-01         2.64845e-01
+       1983         5.07655e-02        -1.46480e+00        -8.04295e-02         9.09326e-02        -6.52922e-02        -9.77464e-02        -4.38825e-02         1.05288e-01         1.66823e-01        -4.41121e-02         2.16165e-01
+       1984         4.70173e-02        -8.76751e-01        -1.99980e-01         1.14236e-01        -2.18726e-01        -4.29448e-01        -7.97143e-02         1.49650e-01         3.12760e-01         2.81129e-01         3.20160e-01
+       1985         2.43476e-01        -1.81796e-01         2.89343e-01         5.75622e-02         1.46989e-01         2.59716e-01         7.26241e-02         2.24419e-01         3.39964e-01         3.51473e-01         3.37271e-01
+       1986         2.04322e-01        -1.15464e+00         2.21113e-01         2.68001e-01         1.45729e-01         1.73108e-01         1.27667e-01         1.97347e-01         2.62915e-01         3.21745e-01         2.49154e-01
+       1987         4.34342e-02        -2.13468e+00        -2.65548e-02         6.28258e-02        -3.98747e-02        -4.80338e-02        -3.44922e-02         7.25147e-02         1.26743e-01         1.85147e-02         1.52060e-01
+       1988         1.77274e-01        -6.45073e-01         1.15016e-01        -1.90670e-02         1.18638e-01         1.41832e-01         1.03337e-01         2.03144e-01         2.35911e-01         5.87854e-02         2.77343e-01
+       1989         4.25178e-01         1.00124e+00         3.15482e-01         1.86587e-01         3.99127e-01         3.09581e-01         4.58199e-01         4.70760e-01         4.51229e-01         3.27864e-01         4.80086e-01
+       1990         9.76143e-01         2.28577e+00         1.33829e+00         6.75567e-01         1.07529e+00         1.33572e+00         9.03483e-01         8.25679e-01         8.76999e-01         1.34369e+00         7.67833e-01
+       1991         6.77168e-01        -1.02541e+00         8.67624e-01         6.58001e-01         7.38165e-01         9.29686e-01         6.11821e-01         5.98039e-01         6.16172e-01         7.37518e-01         5.87787e-01
+       1992         2.63695e-01        -1.48359e+00         2.84235e-01         1.53012e-01         2.88121e-01         3.61638e-01         2.39622e-01         2.55156e-01         2.39269e-01         1.21978e-01         2.66705e-01
+       1993         3.65205e-01         4.93199e-01         4.55763e-01         2.64963e-01         4.54510e-01         5.66926e-01         3.80350e-01         3.27584e-01         2.75900e-01         2.22654e-01         2.88355e-01
+       1994         6.30052e-01         1.85420e+00         8.29945e-01         5.30818e-01         6.45170e-01         7.29897e-01         5.89277e-01         5.46998e-01         6.14935e-01         1.03973e+00         5.15568e-01
+       1995         5.87640e-01         3.27127e-01         7.00540e-01         5.70826e-01         6.30458e-01         6.74013e-01         6.01725e-01         5.40740e-01         5.44822e-01         7.56130e-01         4.95393e-01
+       1996         6.52588e-01         1.64259e+00         7.58306e-01         5.74115e-01         7.23868e-01         7.59144e-01         7.00597e-01         6.08663e-01         5.81309e-01         7.56563e-01         5.40314e-01
+       1997         5.41466e-01        -1.18946e+00         8.72199e-01         6.18248e-01         5.44091e-01         7.42437e-01         4.13244e-01         4.04059e-01         5.38842e-01         1.14428e+00         3.97220e-01
+       1998         2.30220e-01        -1.97681e+00         4.52060e-01         3.48254e-01         3.37722e-01         5.71532e-01         1.83481e-01         1.38061e-01         1.22718e-01         2.01544e-01         1.04279e-01
+       1999         7.87453e-02        -1.84436e+00         1.57563e-01         2.40786e-01         9.22584e-02         2.00269e-01         2.10053e-02         4.60059e-02         6.52321e-02         6.80165e-02         6.45808e-02
+       2000         1.07414e-01        -1.44670e+00         2.31539e-01         1.34936e-01         1.79955e-01         3.46000e-01         7.04176e-02         5.58411e-02         3.48730e-02        -8.45486e-03         4.50081e-02
+       2001         4.20960e-01         2.31307e-01         6.50319e-01         4.10329e-01         4.40033e-01         6.47502e-01         3.03168e-01         3.25664e-01         4.01887e-01         6.56210e-01         3.42397e-01
+       2002         5.64549e-01         1.36823e-01         7.45892e-01         4.32291e-01         6.54192e-01         8.22285e-01         5.43302e-01         4.89210e-01         4.74906e-01         5.85732e-01         4.48982e-01
+       2003         7.54917e-01         1.57194e+00         1.00677e+00         6.67457e-01         9.04629e-01         1.10995e+00         7.69179e-01         6.50277e-01         6.05205e-01         7.90410e-01         5.61882e-01
+       2004         9.76862e-01         2.78271e+00         1.28729e+00         5.61513e-01         1.12073e+00         1.29009e+00         1.00901e+00         8.47895e-01         8.32991e-01         1.28140e+00         7.28101e-01
+       2005         1.02322e+00         1.58658e+00         1.44515e+00         9.24419e-01         1.18750e+00         1.55435e+00         9.45489e-01         8.47917e-01         8.58944e-01         1.21618e+00         7.75382e-01
+       2006         7.23417e-01        -1.46191e+00         1.10955e+00         7.14651e-01         8.85693e-01         1.27300e+00         6.30194e-01         5.62986e-01         5.61140e-01         7.66843e-01         5.13023e-01
+       2007         4.93630e-01        -1.26487e+00         7.29090e-01         6.37712e-01         6.34405e-01         8.32786e-01         5.03535e-01         3.95799e-01         3.52855e-01         5.11637e-01         3.15713e-01
+       2008         4.30765e-01        -8.00133e-01         6.10828e-01         6.25825e-01         5.82518e-01         7.29028e-01         4.85868e-01         3.55945e-01         2.79011e-01         3.62989e-01         2.59367e-01
+       2009         5.90440e-01        -5.50612e-03         6.97309e-01         6.40852e-01         6.53104e-01         7.20346e-01         6.08746e-01         5.46032e-01         5.27775e-01         6.49026e-01         4.99412e-01
+       2010         6.03319e-01        -2.19734e-01         8.52280e-01         6.24208e-01         6.56826e-01         8.51430e-01         5.28448e-01         4.99885e-01         5.49812e-01         8.54049e-01         4.78646e-01
+       2011         5.63345e-01        -8.17922e-01         7.36453e-01         5.43324e-01         6.67233e-01         8.02761e-01         5.77826e-01         4.91417e-01         4.59456e-01         5.97415e-01         4.27185e-01
+       2012         6.77238e-01         9.35338e-01         8.73744e-01         7.36179e-01         7.54563e-01         8.98143e-01         6.59846e-01         5.95606e-01         5.99914e-01         8.22570e-01         5.47830e-01
+       2013         8.99133e-01         1.65622e+00         1.22288e+00         5.68122e-01         1.06762e+00         1.28938e+00         9.21325e-01         7.64615e-01         7.30645e-01         1.08346e+00         6.48117e-01
+       2014         1.04507e+00         2.30820e+00         1.39989e+00         7.45366e-01         1.40670e+00         1.62867e+00         1.26027e+00         8.97663e-01         6.83440e-01         9.20206e-01         6.28057e-01
+       2015         1.10743e+00         2.25172e+00         1.42454e+00         1.03084e+00         1.40520e+00         1.50517e+00         1.33925e+00         9.75677e-01         8.09652e-01         1.25547e+00         7.05367e-01
+       2016         1.07777e+00         1.61782e+00         1.47031e+00         7.95333e-01         1.49371e+00         1.73940e+00         1.33164e+00         9.14682e-01         6.61831e-01         9.06074e-01         6.04699e-01
+       2017         9.98984e-01         1.38958e+00         1.32945e+00         7.94135e-01         1.34679e+00         1.48649e+00         1.25463e+00         8.61680e-01         6.51181e-01         1.00021e+00         5.69536e-01
+       2018         9.31940e-01         3.52613e-01         1.27079e+00         9.49025e-01         1.22989e+00         1.37908e+00         1.13148e+00         7.91158e-01         6.33987e-01         1.04373e+00         5.38141e-01
+       2019         1.11570e+00         1.46272e+00         1.49991e+00         9.46767e-01         1.45151e+00         1.64390e+00         1.32459e+00         9.56068e-01         7.79890e-01         1.19802e+00         6.82081e-01
+       2020         1.19278e+00         2.15700e+00         1.59308e+00         1.08723e+00         1.42490e+00         1.57930e+00         1.32304e+00         1.02645e+00         9.60664e-01         1.62199e+00         8.05967e-01
+       2021         1.07028e+00         1.00810e+00         1.46349e+00         1.02877e+00         1.40354e+00         1.66204e+00         1.23302e+00         9.06909e-01         7.37017e-01         1.04718e+00         6.64463e-01
+       2022         1.03782e+00         1.43752e+00         1.40574e+00         8.85151e-01         1.33979e+00         1.58506e+00         1.17800e+00         8.84955e-01         7.35840e-01         1.02975e+00         6.67090e-01
+       2023         1.01473e+00        -4.32746e-01         1.48643e+00         9.21759e-01         1.28312e+00         1.56896e+00         1.09455e+00         8.18751e-01         7.46332e-01         1.31336e+00         6.13694e-01
+       2024         7.59001e-01        -1.99031e+00         1.15387e+00         8.19833e-01         1.04457e+00         1.34160e+00         8.48631e-01         5.94952e-01         4.73429e-01         7.60247e-01         4.06337e-01
+       2025         7.81235e-01        -4.64897e-01         1.12601e+00         6.51479e-01         9.86790e-01         1.32044e+00         7.66683e-01         6.37994e-01         5.75680e-01         7.18319e-01         5.42315e-01
+       2026         8.42802e-01         8.53777e-01         1.07004e+00         6.47158e-01         1.02743e+00         1.12886e+00         9.60519e-01         7.48386e-01         6.58176e-01         9.46712e-01         5.90682e-01
+       2027         9.33382e-01         6.08919e-01         1.20740e+00         7.46084e-01         1.15183e+00         1.27881e+00         1.06806e+00         8.19541e-01         7.14937e-01         1.05764e+00         6.34772e-01
+       2028         1.10826e+00         1.03807e+00         1.47624e+00         6.52989e-01         1.35581e+00         1.52312e+00         1.24544e+00         9.55371e-01         8.60707e-01         1.37792e+00         7.39721e-01
+       2029         1.19269e+00         2.20967e+00         1.57033e+00         4.68803e-01         1.50656e+00         1.76908e+00         1.33337e+00         1.03579e+00         8.78819e-01         1.15359e+00         8.14545e-01
+       2030         1.33761e+00         2.50539e+00         1.75034e+00         7.95568e-01         1.59480e+00         1.80002e+00         1.45942e+00         1.16612e+00         1.08042e+00         1.64617e+00         9.48082e-01
+       2031         1.20537e+00        -1.93741e-01         1.76240e+00         8.41435e-01         1.63263e+00         2.04865e+00         1.35818e+00         9.73944e-01         7.78119e-01         1.16222e+00         6.88271e-01
+       2032         1.23497e+00         9.72332e-01         1.78791e+00         7.64035e-01         1.63845e+00         1.99773e+00         1.40143e+00         1.00523e+00         8.31489e-01         1.34800e+00         7.10667e-01
+       2033         1.27567e+00         2.13720e+00         1.78619e+00         8.80676e-01         1.65376e+00         1.93994e+00         1.46498e+00         1.06356e+00         8.97570e-01         1.46381e+00         7.65117e-01
+       2034         1.15795e+00        -9.78751e-01         1.74400e+00         7.93935e-01         1.49511e+00         1.93843e+00         1.20266e+00         9.14454e-01         8.20786e-01         1.33632e+00         7.00194e-01
+       2035         1.00433e+00        -1.21554e+00         1.49279e+00         6.95264e-01         1.25484e+00         1.64297e+00         9.98789e-01         8.01391e-01         7.53820e-01         1.17785e+00         6.54632e-01
+       2036         1.21609e+00         1.71169e+00         1.59198e+00         9.00319e-01         1.47340e+00         1.68829e+00         1.33164e+00         1.05991e+00         9.58779e-01         1.39009e+00         8.57887e-01
+       2037         1.68774e+00         3.49973e+00         2.29504e+00         1.16989e+00         2.06732e+00         2.39513e+00         1.85108e+00         1.43542e+00         1.30815e+00         2.08517e+00         1.12639e+00
+       2038         1.55413e+00        -4.46559e-01         2.33390e+00         1.44868e+00         1.97077e+00         2.54574e+00         1.59147e+00         1.23017e+00         1.13750e+00         1.88973e+00         9.61536e-01
+       2039         1.20170e+00        -7.13165e-01         1.78654e+00         1.12296e+00         1.60127e+00         2.09045e+00         1.27857e+00         9.58726e-01         8.02134e-01         1.14933e+00         7.20918e-01
+       2040         1.20514e+00        -2.31234e-02         1.79964e+00         1.00377e+00         1.64775e+00         2.12195e+00         1.33492e+00         9.58132e-01         7.62531e-01         1.12384e+00         6.78014e-01
+       2041         1.30380e+00         1.05025e+00         1.76283e+00         1.08185e+00         1.67604e+00         1.96317e+00         1.48662e+00         1.11309e+00         9.31563e-01         1.34278e+00         8.35374e-01
+       2042         1.38312e+00         1.57421e+00         2.00546e+00         1.18399e+00         1.73715e+00         2.15250e+00         1.46315e+00         1.12456e+00         1.02908e+00         1.69713e+00         8.72817e-01
+       2043         1.26564e+00         6.60912e-01         1.76532e+00         9.38564e-01         1.56955e+00         1.93530e+00         1.32827e+00         1.05804e+00         9.61717e-01         1.40890e+00         8.57114e-01
+       2044         1.32985e+00         4.23957e-02         1.82467e+00         8.83834e-01         1.72404e+00         2.06873e+00         1.49665e+00         1.12425e+00         9.35659e-01         1.31295e+00         8.47405e-01
+       2045         1.39836e+00         1.43014e+00         1.85114e+00         1.27355e+00         1.88591e+00         2.13519e+00         1.72146e+00         1.21024e+00         9.10811e-01         1.25551e+00         8.30181e-01
+       2046         1.79380e+00         2.83792e+00         2.49227e+00         1.55488e+00         2.26575e+00         2.62576e+00         2.02825e+00         1.50361e+00         1.32186e+00         2.21241e+00         1.11354e+00
+       2047         1.65687e+00         6.30709e-01         2.41883e+00         1.45680e+00         2.26430e+00         2.76414e+00         1.93457e+00         1.34030e+00         1.04944e+00         1.69481e+00         8.98475e-01
+       2048         1.66188e+00         1.23771e+00         2.39246e+00         1.45581e+00         2.24701e+00         2.74056e+00         1.92142e+00         1.35834e+00         1.07676e+00         1.66260e+00         9.39719e-01
+       2049         1.69876e+00         1.28483e+00         2.52835e+00         1.47974e+00         2.24265e+00         2.76503e+00         1.89803e+00         1.35408e+00         1.15487e+00         2.03209e+00         9.49673e-01
+       2050         1.59662e+00         6.59860e-01         2.36493e+00         1.53299e+00         2.15184e+00         2.72537e+00         1.77348e+00         1.27740e+00         1.04140e+00         1.60920e+00         9.08581e-01
+       2051         1.63776e+00         2.13994e+00         2.35574e+00         1.54489e+00         2.16498e+00         2.67217e+00         1.83039e+00         1.33947e+00         1.11055e+00         1.69225e+00         9.74478e-01
+       2052         1.83799e+00         2.99653e+00         2.63702e+00         1.67669e+00         2.38377e+00         2.94942e+00         2.01061e+00         1.50602e+00         1.29221e+00         1.98199e+00         1.13086e+00
+       2053         1.75238e+00         9.87259e-01         2.53371e+00         1.52116e+00         2.28428e+00         2.78369e+00         1.95483e+00         1.42776e+00         1.22048e+00         2.00954e+00         1.03591e+00
+       2054         1.67111e+00         1.29878e+00         2.31017e+00         1.30303e+00         2.23457e+00         2.61152e+00         1.98590e+00         1.40560e+00         1.10765e+00         1.67834e+00         9.74160e-01
+       2055         1.72975e+00         2.61494e+00         2.46569e+00         1.54566e+00         2.32659e+00         2.76697e+00         2.03608e+00         1.42398e+00         1.13290e+00         1.83400e+00         9.68903e-01
+       2056         1.70880e+00         4.01191e-01         2.60817e+00         1.52178e+00         2.27444e+00         2.87968e+00         1.87517e+00         1.33515e+00         1.14316e+00         2.03888e+00         9.33640e-01
+       2057         1.55411e+00        -1.75862e-01         2.37061e+00         1.23922e+00         2.13380e+00         2.77306e+00         1.71208e+00         1.21487e+00         9.74424e-01         1.52679e+00         8.45216e-01
+       2058         1.73462e+00         2.29140e+00         2.36163e+00         1.41028e+00         2.28045e+00         2.63798e+00         2.04460e+00         1.47412e+00         1.18879e+00         1.78221e+00         1.04998e+00
+       2059         1.84695e+00         2.50871e+00         2.57179e+00         1.31326e+00         2.45344e+00         2.78035e+00         2.23777e+00         1.54580e+00         1.24046e+00         2.13449e+00         1.03133e+00
+       2060         1.89767e+00         1.99206e+00         2.73185e+00         1.56062e+00         2.48326e+00         2.89384e+00         2.21241e+00         1.55109e+00         1.31208e+00         2.39221e+00         1.05942e+00
+       2061         1.79904e+00         2.11069e+00         2.52456e+00         1.45738e+00         2.40516e+00         2.82002e+00         2.13149e+00         1.49759e+00         1.19291e+00         1.90511e+00         1.02631e+00
+       2062         1.82884e+00         2.41293e+00         2.62401e+00         1.89507e+00         2.41031e+00         2.84566e+00         2.12311e+00         1.49846e+00         1.24737e+00         2.15927e+00         1.03406e+00
+       2063         1.68316e+00        -1.18216e-01         2.53865e+00         1.53079e+00         2.22804e+00         2.79503e+00         1.85401e+00         1.32772e+00         1.13827e+00         2.00108e+00         9.36450e-01
+       2064         1.62036e+00        -4.94596e-02         2.41994e+00         1.43740e+00         2.20322e+00         2.71784e+00         1.86373e+00         1.28815e+00         1.03750e+00         1.79531e+00         8.60240e-01
+       2065         1.49760e+00         1.22475e-01         2.15311e+00         1.43201e+00         2.02500e+00         2.44040e+00         1.75097e+00         1.22525e+00         9.70195e-01         1.55077e+00         8.34389e-01
+       2066         1.47895e+00         2.71038e-01         2.11914e+00         1.30887e+00         1.95831e+00         2.34839e+00         1.70099e+00         1.21296e+00         9.99581e-01         1.63848e+00         8.50131e-01
+       2067         1.59722e+00         2.73172e-03         2.30147e+00         1.35827e+00         2.16222e+00         2.60729e+00         1.86862e+00         1.30463e+00         1.03221e+00         1.66023e+00         8.85311e-01
+       2068         1.67034e+00         7.76292e-01         2.30519e+00         1.30022e+00         2.25960e+00         2.68354e+00         1.97994e+00         1.40657e+00         1.08107e+00         1.51189e+00         9.80294e-01
+       2069         2.05527e+00         2.98476e+00         2.90442e+00         1.61313e+00         2.58157e+00         3.07672e+00         2.25493e+00         1.70246e+00         1.52898e+00         2.54317e+00         1.29174e+00
+       2070         1.99714e+00         8.28232e-01         2.85646e+00         1.44783e+00         2.63188e+00         3.11937e+00         2.31029e+00         1.64011e+00         1.36239e+00         2.30523e+00         1.14185e+00
+       2071         1.98882e+00         1.16715e+00         2.83127e+00         1.81809e+00         2.66959e+00         3.16000e+00         2.34607e+00         1.63879e+00         1.30805e+00         2.14203e+00         1.11296e+00
+       2072         2.08438e+00         2.17314e+00         3.03095e+00         1.74037e+00         2.74293e+00         3.33847e+00         2.35005e+00         1.69110e+00         1.42584e+00         2.38620e+00         1.20119e+00
+       2073         2.12020e+00         2.54992e+00         2.98276e+00         1.62873e+00         2.74910e+00         3.28640e+00         2.39465e+00         1.76182e+00         1.49130e+00         2.34615e+00         1.29134e+00
+       2074         1.98082e+00         6.22246e-01         2.86811e+00         1.46418e+00         2.59076e+00         3.19114e+00         2.19469e+00         1.61217e+00         1.37088e+00         2.19081e+00         1.17908e+00
+       2075         1.88042e+00         8.86372e-01         2.63809e+00         1.53883e+00         2.40586e+00         2.89014e+00         2.08638e+00         1.56562e+00         1.35498e+00         2.10958e+00         1.17847e+00
+       2076         2.05578e+00         2.36658e+00         2.78518e+00         1.75556e+00         2.69259e+00         3.13903e+00         2.39808e+00         1.75273e+00         1.41897e+00         2.04326e+00         1.27293e+00
+       2077         2.11416e+00         1.20532e+00         2.97948e+00         1.60590e+00         2.72706e+00         3.19643e+00         2.41742e+00         1.75464e+00         1.50126e+00         2.52460e+00         1.26189e+00
+       2078         2.00339e+00         1.12320e+00         2.85281e+00         1.64196e+00         2.60237e+00         3.10258e+00         2.27239e+00         1.65048e+00         1.40441e+00         2.32914e+00         1.18811e+00
+       2079         2.25834e+00         3.19187e+00         3.11781e+00         1.77203e+00         2.92381e+00         3.44045e+00         2.58298e+00         1.90123e+00         1.59286e+00         2.44136e+00         1.39439e+00
+       2080         2.25310e+00         2.46857e+00         3.17900e+00         1.75941e+00         2.90876e+00         3.47479e+00         2.53536e+00         1.86841e+00         1.59744e+00         2.55885e+00         1.37254e+00
+       2081         2.16964e+00         8.37487e-01         2.99932e+00         1.74273e+00         2.82693e+00         3.28524e+00         2.52459e+00         1.82493e+00         1.51235e+00         2.39982e+00         1.30475e+00
+       2082         2.16018e+00         1.06857e+00         3.20044e+00         1.74457e+00         2.94349e+00         3.66134e+00         2.46994e+00         1.72796e+00         1.37686e+00         2.23409e+00         1.17634e+00
+       2083         2.15925e+00         2.41194e+00         2.99164e+00         1.75715e+00         2.92295e+00         3.36706e+00         2.62998e+00         1.81341e+00         1.39555e+00         2.20447e+00         1.20633e+00
+       2084         2.29732e+00         3.30979e+00         3.21444e+00         1.75775e+00         2.99130e+00         3.46796e+00         2.67686e+00         1.91628e+00         1.60333e+00         2.68287e+00         1.35080e+00
+       2085         2.25364e+00         2.57568e+00         3.25223e+00         1.62270e+00         3.00758e+00         3.64040e+00         2.59012e+00         1.83874e+00         1.49969e+00         2.43835e+00         1.28013e+00
+       2086         2.26870e+00         2.69457e+00         3.13541e+00         1.56713e+00         2.91081e+00         3.40280e+00         2.58625e+00         1.90859e+00         1.62659e+00         2.57480e+00         1.40479e+00
+       2087         2.18064e+00         2.05797e+00         3.06620e+00         1.59406e+00         2.91212e+00         3.48085e+00         2.53694e+00         1.81271e+00         1.44916e+00         2.19681e+00         1.27427e+00
+       2088         2.33393e+00         3.35022e+00         3.25126e+00         1.65054e+00         3.02655e+00         3.56562e+00         2.67093e+00         1.95279e+00         1.64131e+00         2.59215e+00         1.41890e+00
+       2089         2.39224e+00         3.02378e+00         3.29702e+00         1.85580e+00         3.02467e+00         3.56515e+00         2.66811e+00         2.01632e+00         1.75982e+00         2.73482e+00         1.53174e+00
+       2090         2.15281e+00         1.12124e+00         2.97148e+00         1.60256e+00         2.74912e+00         3.21097e+00         2.44444e+00         1.81267e+00         1.55651e+00         2.46932e+00         1.34298e+00
+       2091         2.20907e+00         2.15034e+00         3.04449e+00         1.53942e+00         2.87757e+00         3.37987e+00         2.54621e+00         1.86197e+00         1.54058e+00         2.34131e+00         1.35327e+00
+       2092         2.33138e+00         2.55641e+00         3.22660e+00         1.69207e+00         2.93791e+00         3.41410e+00         2.62377e+00         1.95943e+00         1.72485e+00         2.83346e+00         1.46552e+00
+       2093         2.24901e+00         1.08005e+00         3.18792e+00         1.64473e+00         2.97228e+00         3.58268e+00         2.56960e+00         1.85893e+00         1.52575e+00         2.36022e+00         1.33055e+00
+       2094         2.11399e+00         1.77506e+00         2.91290e+00         1.39417e+00         2.73079e+00         3.22389e+00         2.40549e+00         1.78206e+00         1.49719e+00         2.26082e+00         1.31856e+00
+       2095         2.37984e+00         3.83274e+00         3.29156e+00         1.63815e+00         3.03894e+00         3.58833e+00         2.67652e+00         2.00104e+00         1.72074e+00         2.66931e+00         1.49886e+00
+       2096         2.27331e+00         9.87037e-01         3.16975e+00         1.76095e+00         2.86042e+00         3.43893e+00         2.47878e+00         1.90085e+00         1.68619e+00         2.60533e+00         1.47119e+00
+       2097         2.00005e+00        -4.02885e-02         2.77525e+00         1.38102e+00         2.59929e+00         3.12030e+00         2.25558e+00         1.67797e+00         1.40081e+00         2.05178e+00         1.24854e+00
+       2098         2.29564e+00         3.01438e+00         3.12397e+00         1.47442e+00         2.98009e+00         3.45363e+00         2.66770e+00         1.95148e+00         1.61118e+00         2.43276e+00         1.41900e+00
+       2099         2.46992e+00         2.29273e+00         3.51814e+00         1.96228e+00         3.06389e+00         3.72888e+00         2.62520e+00         2.03440e+00         1.87595e+00         3.07627e+00         1.59517e+00
+       2100         2.07972e+00        -7.37075e-01         3.00779e+00         1.57186e+00         2.67407e+00         3.33404e+00         2.23870e+00         1.69413e+00         1.48536e+00         2.32375e+00         1.28925e+00
